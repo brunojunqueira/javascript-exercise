@@ -5,4 +5,4 @@ Resolution to Advanced Javascript Exercise.
 NPM Modules used:
 - Jest (For tests).
 
-The entire application was developed with Javascript and HTML.
+The entire application was built with Javascript and HTML.
