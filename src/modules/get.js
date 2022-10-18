@@ -17,9 +17,19 @@ async function get(usersURL = defaultUsersURL, postsURL = defaultPostsURL) {
             return data;
         });
         
-        //Merge users with posts.
+        //Map all users.
         const data = users.map((user) => {
-            return { ...user, posts: posts.filter( (item) => (item.userId === user.id) ) };
+            //Format user address.
+            user.address = `${user.address.street}, ${user.address.suite} - ${user.address.zipcode} ${user.address.city}`;
+            //Format user company.
+            user.company = user.company.name;
+            //Merge users with posts deleting userId field from posts.
+            return { ...user, posts: posts.filter( (item) => {
+                if(item.userId === user.id){
+                    delete item.userId;
+                    return item;
+                }
+            })};
         });
         
         //If everythin went okay, return data.
