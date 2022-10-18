@@ -27,7 +27,7 @@ async function get(usersURL = defaultUsersURL, postsURL = defaultPostsURL) {
 
     } catch (error) {
         //If an error occurs it will be returned.
-        return error;
+        return error.message;
     }
 }
 
