@@ -1,0 +1,11 @@
+.data-field{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.userfield{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
