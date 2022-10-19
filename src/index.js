@@ -1,4 +1,4 @@
-import Letter from './modules/letter.js'
+import Letter from './services/letter.js'
 
 //declare html element fields variables.
 const names_field = document.getElementById('users__names');

@@ -1,5 +1,4 @@
-const defaultUsersURL = 'https://jsonplaceholder.typicode.com/users';
-const defaultPostsURL = 'https://jsonplaceholder.typicode.com/posts';
+import { DEFAULT_USERS_ENDPOINT, DEFAULT_POSTS_ENDPOINT } from '../utils/constants.js';
 
 /**
 * Get the users and posts from end-point api and merge them.
@@ -7,7 +6,7 @@ const defaultPostsURL = 'https://jsonplaceholder.typicode.com/posts';
 * @param {string} postsURL Posts End-point URL.
 * @returns {object} Return merged data.
 */
-async function get(usersURL = defaultUsersURL, postsURL = defaultPostsURL) {
+async function getUsersWithPosts(usersURL = DEFAULT_USERS_ENDPOINT, postsURL = DEFAULT_POSTS_ENDPOINT) {
     try {
         //Get users and posts from end-poind api.
         const [users, posts] = await Promise.all([
@@ -41,4 +40,4 @@ async function get(usersURL = defaultUsersURL, postsURL = defaultPostsURL) {
     }
 }
 
-export default get;
+export default getUsersWithPosts;
