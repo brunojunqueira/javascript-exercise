@@ -1,4 +1,4 @@
-import Letter from '../modules/letter.js';
+import Letter from '../services/letter.js';
 
 //Test if the function returns an error when end-point URLs are wrong or null.
 test('Invalid or Null end-point', async () => {
