@@ -10,8 +10,8 @@ async function getUsersWithPosts(usersURL = DEFAULT_USERS_ENDPOINT, postsURL = D
     try {
         //Get users and posts from end-poind api.
         const [users, posts] = await Promise.all([
-            fetch(usersURL).then( response => { return response.json() }),
-            fetch(postsURL).then( response => { return response.json() })
+            fetch(usersURL).then( res => { return res.json() }),
+            fetch(postsURL).then( res => { return res.json() })
         ]).then( data => {
             return data;
         });

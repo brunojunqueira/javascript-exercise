@@ -11,6 +11,6 @@
   },
   "scripts": {
     "test": "jest",
-    "start": "http-server -o /public/"
+    "start": "http-server ./ -o /public/"
   }
 }
