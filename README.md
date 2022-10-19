@@ -1,4 +1,4 @@
-# javascript-exercise
+# Javascript Interview
 
 Resolution to Advanced Javascript Exercise.
 
