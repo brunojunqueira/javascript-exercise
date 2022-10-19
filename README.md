@@ -2,7 +2,7 @@
 
 Resolution to Advanced Javascript Exercise.
 
-## Used Technologies:
+## Used Technologies
 - Javascript
 - HTML
 - CSS
