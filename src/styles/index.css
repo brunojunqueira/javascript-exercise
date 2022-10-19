@@ -33,7 +33,7 @@ body {
     gap: 1rem;
 }
 
-.users__button{
+button{
     align-items: center;
     appearance: none;
     background-color: #FCFCFD;
@@ -63,18 +63,25 @@ body {
     font-size: 18px;
 }
 
-.users__button:focus {
+button:focus {
     box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
 }
 
-.users__button:hover {
+button:hover {
     box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
     transform: translateY(-2px);
 }
 
-.users__button:active {
+button:active {
     box-shadow: #D6D6E7 0 3px 7px inset;
     transform: translateY(2px);
+}
+
+.users__code{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
 }
 
 .users__pre{
@@ -84,8 +91,8 @@ body {
     border-radius: 4px;
     padding: 2rem;
     color: #36395A;
-    width: 80rem;
-    height: 40rem;
+    width: 60rem;
+    height: 30rem;
     overflow-x: hidden;
     font-size: 18px;
 }

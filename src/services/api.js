@@ -1,10 +1,8 @@
-import getUsersWithPosts from './getUsersWithPosts.js';
+import getUsersWithPosts from '../functions/getUsersWithPosts.js';
 
 /**
  * Letter it's an object that contains get method wich is responsible to manage API and return results.
  */
-const Letter = {
+export const Letter = {
     get: getUsersWithPosts
 }
-
-export default Letter;

@@ -1,8 +1,8 @@
-import Letter from './services/letter.js'
+import createUsersButtons from './functions/createUsersButtons.js';
+import { Letter } from './services/api.js'
 
-//declare html element fields variables.
-const names_field = document.getElementById('users__names');
-const users_pre = document.getElementById('users__pre');
+const users_pre = document.querySelector('.users__pre');
+const copy_button = document.querySelector('#users__copy');
 
 //Get users by Letter.get method.
 const data = await Letter.get();
@@ -15,25 +15,23 @@ const handleSelectedUser = (user) => {
     users_pre.textContent = JSON.stringify(user, null, 2);
 }
 
-//Check if data result is not an error message.
-if(typeof data !== 'string'){
-    //Map the users, create a button with user's name and append button to names_field.
-    data.map((user)=>{
-        let button = document.createElement('button');
-        button.className = "users__button";
-        button.innerText = user.name;
-        button.onclick = () => handleSelectedUser(user);
-        names_field.appendChild(button);
-    });
+createUsersButtons(data, handleSelectedUser);
 
-    //Defines first user from array to displayed data.
-    handleSelectedUser(data[0]);
+/**
+* Change the text of copy_button and copy the text of users_pre to clipboard.
+*/
+const handleCopyButtonPressed = () => {
 
-} else {
-    //Catch error and display a message.
-    users_pre.textContent = 'Something went wrong, please try again.';
+    copy_button.textContent = "Copied!"
+
+    setTimeout(()=>{
+        copy_button.textContent = "Copy to Clipboard";
+    }, 1000);
+
+    navigator.clipboard.writeText(users_pre.textContent);
 }
 
+copy_button.addEventListener('click', handleCopyButtonPressed);
 
 
 
