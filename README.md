@@ -7,4 +7,6 @@ NPM Modules used:
 
 The entire application was built with Javascript, HTML and CSS.
 
-To test the application, run 'npm start' or 'yarn start'.
+- To setup the application, run 'npm install or 'yarn'.
+
+- To test the application, run 'npm start' or 'yarn start'.
