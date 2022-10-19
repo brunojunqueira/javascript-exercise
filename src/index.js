@@ -17,7 +17,7 @@ const handleSelectedUser = (user) => {
 
 //Check if data result is not an error message.
 if(typeof data !== 'string'){
-    //Map the users create a button with user's name and append button to names_field.
+    //Map the users, create a button with user's name and append button to names_field.
     data.map((user)=>{
         let button = document.createElement('button');
         button.className = "users__button";
