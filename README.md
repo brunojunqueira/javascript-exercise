@@ -2,11 +2,17 @@
 
 Resolution to Advanced Javascript Exercise.
 
-NPM Modules used:
+## Used Technologies:
+- Javascript
+- HTML
+- CSS
 - Jest (For tests).
 
-The entire application was built with Javascript, HTML and CSS.
+## Setup
+- To download repository, clone with `git clone https://github.com/brunojunqueira/javascript-exercise.git`or download manually as zip clicking on the **Code** button.
 
-- To setup the application, run 'npm install or 'yarn'.
+Once downloaded, setup the application running `npm install` or `yarn` in the terminal.
 
-- To test the application, run 'npm run start' or 'yarn start'.
+## Test
+- To test the web application, run `npm run start` or `yarn start`.
+- To run Jest Tests, run `npm run test` or `yarn test`.
