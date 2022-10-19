@@ -9,4 +9,4 @@ The entire application was built with Javascript, HTML and CSS.
 
 - To setup the application, run 'npm install or 'yarn'.
 
-- To test the application, run 'npm start' or 'yarn start'.
+- To test the application, run 'npm run start' or 'yarn start'.
